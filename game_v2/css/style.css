@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Monotype Corsiva'; /* Имя шрифта */
+    src: url('fonts/8209.ttf'); /* Путь к файлу со шрифтом */
+   }
+
+body{
+	
+	background: #2d373c;
+	font-family: 'Monotype Corsiva';
+	font-style: italic;
+	color: #fff;
+	
+}
+.wrapper{
+text-align: center;
+}
+.count{
+	font-size: 30px; 
+	padding: 10px;
+	position: absolute;
+	top: 25px;
+	right: 0;
+	background: #9b3615;
+	z-index: 100;
+}
+.count:before{
+	
+  content: '';
+  position: absolute;
+  top: 0; right: 30px;
+  width: 300px; height: 100%;
+  background: #9b3615;
+  
+  -webkit-transform: skewX(40deg);
+  -ms-transform: skewX(40deg);
+  transform: skewX(40deg);
+  z-index: -1;
+  
+
+
+}
+
+.start{
+	color: #fff;
+	position: absolute;
+	top: 25px;
+	left: 0px;
+	width: 150px;
+	height: 54px;
+	background: #9b3615;
+	font-family: 'Monotype Corsiva';
+	font-style: italic;
+	font-size: 30px;
+	cursor:  url('../img/cursor.png') 15 15, pointer;
+	border: 0;
+	border-radius: 25px;
+	transition: all 0.5s ease 0s
+}
+.start:hover{
+	background: #8b3215;
+}
+.gamefield{
+	height: 500px;
+	width: 700px;
+	position: relative;
+	padding-bottom: 25px;
+	margin: 0 auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	font-size: 20px;
+	cursor:  url('../img/cursor.png') 15 15, pointer;
+
+	background: url('../img/bg.png') bottom no-repeat;
+
+	background-size: 100%;
+}
+.point{
+
+	font-weight: bold;
+}
+.table{
+	width: 700px;
+	height: 300px;
+	/* border-bottom: 5px solid #630; */
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	justify-content: space-around;
+	-ms-align-items: flex-end;
+	align-items: flex-end;
+	position: relative;
+}
+.can{
+	width: 48px;
+	height: 125px;
+	
+	background: url("../img/can.png") center no-repeat;
+	background-size: 100%;
+	transform-origin: 50% bottom;
+	position: absolute;
+}
+.p1{
+	top: 340px;
+	left: 70px;
+}
+.p2{
+	top: 120px;
+	left: 143px;
+}
+.p3{
+	top: 285px;
+	left: 242px;
+}
+.p4{
+	top: 90px;
+	left: 342px;
+}
+.p5{
+	top: 233px;
+	left: 448px;
+}
+.p6{
+	top: 156px;
+	left: 573px;
+}
+.p7{
+	top: 350px;
+	left: 558px;
+}
+
+.die{
+	animation: died 0.3s forwards;
+}
+.none{
+	display: none;
+}
+@keyframes died{
+	100%{
+		transform: rotateX(90deg);
+			
+	}
+}
