@@ -1,0 +1,118 @@
+.layout {
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+.layout tr td {
+    padding: 20px;
+    vertical-align: top;
+    border: solid 1px gray;
+}
+
+.header {
+    font-size: 30px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.sidebarHeader {
+    font-size: 20px;
+}
+
+.sidebar ul {
+    padding-left: 20px;
+}
+
+a, a:visited {
+    color: darkgreen;
+}
+
+.comment{
+    background: rgba(0, 128, 128, 0.2);
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+}
+.comment__user{
+    display: block;
+    font-weight: 800;
+
+}
+
+
+*{
+    box-sizing: border-box;
+    transition: all 0.2s ease 0;
+}
+
+body{
+    font-family: Arial ,serif;
+    padding: 0;
+    margin: 0;
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+.admin{
+    font-size: 30px;
+    margin-left: 20px;
+}
+ul{
+    list-style: none;
+}
+.nav-admin__ul{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    background: #00BFFF;
+
+}
+.nav-admin__list{
+    margin-left: 40px;
+}
+.nav-admin__link, .nav-admin__link:visited{
+    font-weight: bold;
+    color: #000;
+    display: block;
+    padding: 15px;
+    background: #00BFFF;
+    transition: background 0.5s ease-out 0s;
+}
+.nav-admin__link:hover{
+    background: #4682B4;
+}
+
+.admin-field{
+    padding: 45px;
+    width: 50%;
+}
+.field{
+    border: 1px solid #000000;
+    padding: 10px;
+}
+.field__par{
+    font-size: 15px;
+}
+.admin-add-article, .admin-add-article:visited {
+    color: black;
+    padding: 15px;
+    margin-left: 40px;
+    display: block;
+    background:  #00BFFF;
+    text-decoration: none;
+    transition: background 0.5s ease-out 0s;
+}
+.admin-add-article:hover{
+    text-decoration: none;
+    background: #4682B4;
+    color: black;
+}
+
