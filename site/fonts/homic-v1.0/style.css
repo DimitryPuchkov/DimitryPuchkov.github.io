@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'homic';
+  src:  url('fonts/homic.eot?yefnnw');
+  src:  url('fonts/homic.eot?yefnnw#iefix') format('embedded-opentype'),
+    url('fonts/homic.ttf?yefnnw') format('truetype'),
+    url('fonts/homic.woff?yefnnw') format('woff'),
+    url('fonts/homic.svg?yefnnw#homic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon-home {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'homic' !important;
+  /* speak: never; */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  /* line-height: 1; */
+  
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e900";
+  margin-top: 50px;
+}
