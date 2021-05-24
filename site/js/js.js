@@ -1,6 +1,8 @@
+
+// Развернуть\свернуть статью
 const articles = document.querySelectorAll(".article");
 document.addEventListener("click", function(e){
-    if(e.target.className=="button"){
+    if(e.target.className=="article-show"){
         console.log(e.target.innerText);
         //console.log(e.target.parentNode.children[2]);
         if(e.target.innerText == "Подробнее")
@@ -14,6 +16,7 @@ document.addEventListener("click", function(e){
     
 })
 
+//Показать\убрать меню в мобилке
 const menu = document.querySelector("#nav");
 const burger = document.querySelector(".burger");
 burger.addEventListener("click", function(){
@@ -28,6 +31,8 @@ burger.addEventListener("click", function(){
     menu.classList.toggle("active");
 })
 
+
+//Поиск
 const search = document.querySelector("#search");
 const panel = document.querySelector(".search__panel");
 const searchTxt = document.querySelector(".search__text");
@@ -43,3 +48,4 @@ search.addEventListener("click", function(e){
         panel.classList.add("active_search");
     }
 })
+
