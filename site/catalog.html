@@ -52,15 +52,45 @@
     </header>
     <section>
         <div class="container">
-            <div class="rec">
-
-            </div>
+            <div class="rec"></div>
         </div>
     </section>
     <section>
         <div class="container">
             <div class="catalog">
-                <div class="row">
+                <!-- <div class="row"> -->
+                    <div class="row filter-kino justify-content-center align-items-end">
+                        <div class="col-sm-2">
+                            Жанр:
+                            <select  class="kino__select" name="genre" id="genre">
+                                <option value="all">Все</option>
+                                <option value="dram">Драма</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2">
+                            Год:
+                            <input type="text"  class="kino__select" style="padding-left: 5px;" name="year" id="year">
+                            </input>
+                        </div>
+                        <div class="col-sm-2">
+                            Страна:
+                            <select  class="kino__select" name="country" id="country">
+                                <option value="all">Все</option>
+                                <option value="France">Франция</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2">
+                            Возраст:
+                            <select  class="kino__select" name="age" id="age">
+                                <option value="all">Все</option>
+                                <option value="18+">18+</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2">
+                            <button class="button filter-button">Найти</button>
+                        </div>
+                </div>
+                <div class="row" id="movies">
                     <div class="col-sm-4 mb30"><a href="./catalog_one.html">
                         <img src="./img/frame.png" alt="" class="catalog__prev">
                         <h4>Название фильма</h4>
@@ -170,6 +200,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/filter_film.js"></script>
     <script src="./js/js.js"></script>
 </body>
 </html>
